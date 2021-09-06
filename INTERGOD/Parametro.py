@@ -14,7 +14,7 @@ from PyQt5 import QtCore, QtGui, QtWidgets
 class Ui_Dialog3(object):
     def setupUi(self, Dialog3):
         Dialog3.setObjectName("Dialog3")
-        Dialog3.resize(294, 151)
+        Dialog3.resize(294, 404)
         self.lineEdit = QtWidgets.QLineEdit(Dialog3)
         self.lineEdit.setGeometry(QtCore.QRect(40, 70, 221, 41))
         self.lineEdit.setText("")
@@ -26,6 +26,23 @@ class Ui_Dialog3(object):
         font.setPointSize(11)
         self.label_2.setFont(font)
         self.label_2.setObjectName("label_2")
+        self.label_3 = QtWidgets.QLabel(Dialog3)
+        self.label_3.setGeometry(QtCore.QRect(70, 130, 271, 16))
+        font = QtGui.QFont()
+        font.setFamily("MS Reference Sans Serif")
+        font.setPointSize(11)
+        self.label_3.setFont(font)
+        self.label_3.setObjectName("label_3")
+        self.spinBox = QtWidgets.QSpinBox(Dialog3)
+        self.spinBox.setGeometry(QtCore.QRect(80, 160, 131, 71))
+        self.spinBox.setObjectName("spinBox")
+        self.pushButton_2 = QtWidgets.QPushButton(Dialog3)
+        self.pushButton_2.setGeometry(QtCore.QRect(80, 260, 131, 91))
+        font = QtGui.QFont()
+        font.setPointSize(14)
+        self.pushButton_2.setFont(font)
+        self.pushButton_2.setStyleSheet("background-color: rgb(85, 255, 0);")
+        self.pushButton_2.setObjectName("pushButton_2")
 
         self.retranslateUi(Dialog3)
         QtCore.QMetaObject.connectSlotsByName(Dialog3)
@@ -34,6 +51,8 @@ class Ui_Dialog3(object):
         _translate = QtCore.QCoreApplication.translate
         Dialog3.setWindowTitle(_translate("Dialog3", "Dialog"))
         self.label_2.setText(_translate("Dialog3", "Ingresar el nombre del parametro"))
+        self.label_3.setText(_translate("Dialog3", "Ingresar la frecuencia"))
+        self.pushButton_2.setText(_translate("Dialog3", "INGRESAR"))
 
 
 if __name__ == "__main__":

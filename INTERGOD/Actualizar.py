@@ -18,13 +18,13 @@ class Ui_actualizar(object):
         self.textEdit = QtWidgets.QTextEdit(actualizar)
         self.textEdit.setGeometry(QtCore.QRect(30, 100, 171, 91))
         self.textEdit.setObjectName("textEdit")
-        self.pushButton = QtWidgets.QPushButton(actualizar)
-        self.pushButton.setGeometry(QtCore.QRect(230, 100, 131, 91))
+        self.botonActualizar = QtWidgets.QPushButton(actualizar)
+        self.botonActualizar.setGeometry(QtCore.QRect(230, 100, 131, 91))
         font = QtGui.QFont()
         font.setPointSize(14)
-        self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet("background-color: rgb(85, 255, 0);")
-        self.pushButton.setObjectName("pushButton")
+        self.botonActualizar.setFont(font)
+        self.botonActualizar.setStyleSheet("background-color: rgb(85, 255, 0);")
+        self.botonActualizar.setObjectName("botonActualizar")
         self.label_2 = QtWidgets.QLabel(actualizar)
         self.label_2.setGeometry(QtCore.QRect(30, 20, 311, 71))
         font = QtGui.QFont()
@@ -39,7 +39,7 @@ class Ui_actualizar(object):
     def retranslateUi(self, actualizar):
         _translate = QtCore.QCoreApplication.translate
         actualizar.setWindowTitle(_translate("actualizar", "Dialog"))
-        self.pushButton.setText(_translate("actualizar", "ACTUALIZAR"))
+        self.botonActualizar.setText(_translate("actualizar", "ACTUALIZAR"))
         self.label_2.setText(_translate("actualizar", "<html><head/><body><p align=\"center\">SELECCIONE LA PLANTA</p><p align=\"center\">QUE DESEE ACTUALIZAR</p></body></html>"))
 
 

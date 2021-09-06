@@ -25,13 +25,13 @@ class Ui_eliminar(object):
         self.textEdit = QtWidgets.QTextEdit(eliminar)
         self.textEdit.setGeometry(QtCore.QRect(40, 100, 171, 91))
         self.textEdit.setObjectName("textEdit")
-        self.pushButton = QtWidgets.QPushButton(eliminar)
-        self.pushButton.setGeometry(QtCore.QRect(240, 100, 131, 91))
+        self.botonEliminar = QtWidgets.QPushButton(eliminar)
+        self.botonEliminar.setGeometry(QtCore.QRect(240, 100, 131, 91))
         font = QtGui.QFont()
         font.setPointSize(16)
-        self.pushButton.setFont(font)
-        self.pushButton.setStyleSheet("background-color: rgb(255, 0, 0);")
-        self.pushButton.setObjectName("pushButton")
+        self.botonEliminar.setFont(font)
+        self.botonEliminar.setStyleSheet("background-color: rgb(255, 0, 0);")
+        self.botonEliminar.setObjectName("botonEliminar")
 
         self.retranslateUi(eliminar)
         QtCore.QMetaObject.connectSlotsByName(eliminar)
@@ -40,7 +40,7 @@ class Ui_eliminar(object):
         _translate = QtCore.QCoreApplication.translate
         eliminar.setWindowTitle(_translate("eliminar", "Dialog"))
         self.label_2.setText(_translate("eliminar", "<html><head/><body><p align=\"center\">SELECCIONE LA PLANTA</p><p align=\"center\">QUE DESEE ELIMINAR</p></body></html>"))
-        self.pushButton.setText(_translate("eliminar", "ELIMINAR"))
+        self.botonEliminar.setText(_translate("eliminar", "ELIMINAR"))
 
 
 if __name__ == "__main__":
